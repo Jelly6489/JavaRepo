@@ -18,6 +18,7 @@ class Adventure implements SkillSet{
     private int vit;
     private int mental;
 
+    // 생성자
     public Adventure(int atk, int def,
                      int mag, int mdef, int dex, int vit, int mental) {
         this.atk = atk;
@@ -89,6 +90,7 @@ class Warrior extends Adventure {
     public Warrior(int atk, int def, int mag,
                    int mdef, int dex, int vit,
                    int mental, float anger) {
+        // super() 부모 클래스의 생성자 호출
         super(atk * 2, def * 3,
                 mag, mdef * 2, dex * 2,
                 vit * 4, mental);
@@ -139,7 +141,7 @@ public class InterfaceRPGTest {
         final int MAX = 10;
         final int BIAS = 10;
 
-
+        //생성자: 클래스 이름가 동일한 메서드
         Adventure adv = new Adventure(
                 rand.nextInt(MAX) + BIAS,
                 rand.nextInt(MAX) + BIAS,
@@ -150,9 +152,12 @@ public class InterfaceRPGTest {
                 rand.nextInt(MAX) + BIAS
         );
 
+        // 객체를 출력할 때 toString()이 있으면 원하는 형로 출력이 가능하다.
         System.out.println(adv);
+
         adv.skill1();
         adv.skill2();
+
         Warrior war = new Warrior(
                 rand.nextInt(MAX) + BIAS,
                 rand.nextInt(MAX) + BIAS,
@@ -168,6 +173,7 @@ public class InterfaceRPGTest {
 
         war.skill1();
         war.skill2();
+
         war.legacySkill1();
         war.legacySkill2();
     }
