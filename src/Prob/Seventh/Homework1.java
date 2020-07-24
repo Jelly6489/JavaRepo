@@ -1,4 +1,4 @@
-package Seventh;
+package Prob.Seventh;
 
 import java.util.Arrays;
 

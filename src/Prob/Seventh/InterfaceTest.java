@@ -1,4 +1,4 @@
-package Seventh;
+package Prob.Seventh;
 
 
 // interface 사용 목적이 동일한 이름으로 여러가지 기능을 처리하기 위함.
