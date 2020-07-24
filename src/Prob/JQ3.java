@@ -7,6 +7,7 @@ public class JQ3 {
         Scanner scan = new Scanner(System.in);
         System.out.print("몇 번째 항을 구할까요?");
         int arrLen = scan.nextInt();
+        arrLen = arrLen +1;
 
         int[] arr = new int[arrLen];
         int i;
