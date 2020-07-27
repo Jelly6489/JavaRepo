@@ -1,5 +1,6 @@
 package Prob;
 
+// #1. 1 ~ 100까지의 정수에서 짝수를 모두 뽑아내시오.
 public class JQ1 {
     public static void main(String[] args) {
         int sum = 0;
